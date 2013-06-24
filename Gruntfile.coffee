@@ -4,17 +4,17 @@ module.exports = (grunt)->
 		coffee:
 			app:
 				files:
-					"../../Dropbox/Public/jairodesign/javascripts/app.js": "javascripts/app.coffee"
+					"javascripts/app.js": "javascripts/app.coffee"
 				options:
 					bare: true
 		jade:
 			index:
 				files:
-					"../../Dropbox/Public/jairodesign/index.html": "jades/index.jade"
+					"index.html": "jades/index.jade"
 		stylus:
 			style:
 				files:
-					"../../Dropbox/Public/jairodesign/stylesheets/style.css": "stylesheets/style.styl"
+					"stylesheets/style.css": "stylesheets/style.styl"
 		watch:
 			files: ["javascripts/app.coffee", "jades/index.jade", "stylesheets/style.styl"]
 			tasks: ["coffee", "jade", "stylus"]
